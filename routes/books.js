@@ -48,7 +48,7 @@ router.get('/new', async (req, res) =>{
 
 //Create Book Route
 router.post('/', async (req, res) =>{
-    const fileName = req.file != null ? req.file.filename : null
+    // const fileName = req.file != null ? req.file.filename : null
     const book = new Book ({
         title: req.body.title,
         author: req.body.author,
@@ -61,8 +61,8 @@ router.post('/', async (req, res) =>{
         saveCover(book, req.body.cover)
 
         try {
-            await book.save()
-             res.redirect(`books/${book.id}`)
+           const newBook=  await book.save()
+             res.redirect(`books/${newBook.id}`)
         // res.redirect(`books`)
         } catch  {
             renderNewPage(res, book, true)
