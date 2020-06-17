@@ -1,0 +1,11 @@
+.form-row{
+    display: flex;
+    margin-bottom: .5rem;
+}
+.form-item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    flex-grow: 1;
+    flex-basis: 0;
+}
