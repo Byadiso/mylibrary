@@ -26,6 +26,9 @@
     margin-bottom: .25rem;
     margin-left: .25rem;
 }
+.form-row-end {
+    justify-content: flex-end;
+}
 
 .form-item input, .form-item select, .form-item textarea {
     height: 2rem;
@@ -43,8 +46,25 @@
     height: 100%;
     resize: none;
 }
+.form-item select option {
+    background-color:black;
+}
 
 .form-item  input:focus, .form-item select:focus, .form-item textarea:focus {
     border-color: var(--form-input-border-color-light);
 }
 
+.filepond--root {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 0;
+}
+
+.filepond--panel-root {
+    background-color: var(--form-input-background-color);
+    border:  1px solid var(--form-input-border-color);
+}
+
+.filepond--drop-label {
+    color: car(--color-text-light);
+    font-size: inherit;
+}
