@@ -3,8 +3,7 @@
     --form-label-font-size: 1.2rem;
     --form-input-background-color: hsl(var(--color-base-hue),100%, 31%);
     --form-input-border-color: hsl(var(--color-base-hue), 100%, 50%);
-    --form-input-border-color-light: hsl(var(--color-base-hue), 100%, 80%);
-    
+    --form-input-border-color-light: hsl(var(--color-base-hue), 100%, 80%);    
 }
 .form-row{
     display: flex;
@@ -39,4 +38,13 @@
     font-weight: normal;
     font-family: Georgia, 'Times New Roman', Times, serif;
     outline: none;
+    }
+.form-item textarea {
+    height: 100%;
+    resize: none;
 }
+
+.form-item  input:focus, .form-item select:focus, .form-item textarea:focus {
+    border-color: var(--form-input-border-color-light);
+}
+
