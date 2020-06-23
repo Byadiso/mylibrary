@@ -3,6 +3,8 @@
 @import 'shared/header.css';
 @import 'shared/buttons.css';
 @import 'shared/form.css';
+@import 'shared/authors.css';
+
 
 :root{
     font-family: Georgia, 'Times New Roman', Times, serif;
